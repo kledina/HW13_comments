@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(145, 225, 199);
+    color:midnightblue;
+}
+input {
+    display: flex;
+    align-items: stretch;
+}
+button {
+    background-color:darksalmon;
+    border-radius: 10%;
+    border-color: darksalmon;
+}
+img {
+    width: 20%;
+}
