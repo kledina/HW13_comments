@@ -1,10 +1,9 @@
 let inputfield = document.getElementsByClassName('inputfield');
-//var newInputfield = inputfield.trim();
-const capitalizeName = (str) => {
-    return str[0].toUpperCase()+str.toLowerCase().slice(1); 
+function capitalizeName(str) {
+    return str[0].toUpperCase() + str.toLowerCase().slice(1);
 }
 const postIt = () => {
-    let username = document.getElementById('username').value;
+    let username = document.getElementById('username').value.replace('/\s+/g', ' ').trim();
     let avatar = document.getElementById('avatar').value;
     let message = document.getElementById('message').value;
     let usernameArray = username.split(' ');
